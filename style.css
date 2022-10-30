@@ -1,0 +1,173 @@
+body {
+    background-color: black;
+}
+
+.unselect, .button{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@keyframes rainbow_text {
+    0% {
+        color: #ffff00;
+    }
+    17% {
+        color: #00ff00;
+    }
+    34% {
+        color: #00ffff;
+    }
+    51% {
+        color: #0000ff;
+    }
+    68% {
+        color: #ff00ff;
+    }
+    85% {
+        color: #ff0000;
+    }
+    100% {
+        color: #ffff00;
+    }
+}
+@keyframes bounce {
+    0% {
+        top: 0px;
+    }
+    10% {
+        top: 1px;
+    }
+    20% {
+        top: 3.5px;
+    }
+    30% {
+        top: 6.5px;
+    }
+    40% {
+        top: 9px;
+    }
+    50% {
+        top: 10px;
+    }
+    60% {
+        top: 9px;
+    }
+    70% {
+        top: 6.5px;
+    }
+    80% {
+        top: 3.5px;
+    }
+    90% {
+        top: 1px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+@font-face {
+    font-family: monospace_swt;
+    src: url(font.ttf);
+}
+
+.simple_text, .bounce_text > div {
+    color: white;
+    font-family: monospace_swt;
+}
+
+.bounce_text > div {            
+    position: relative;
+    top: 0px;
+    padding-bottom: 10px;
+    display: inline-block;
+    animation: bounce .5s ease infinite alternate, rainbow_text 1s ease infinite alternate;
+}
+
+extra {
+    text-align:center;
+    display:inline;
+    font-size: 0;
+    padding: 0%;
+    margin: 0%;
+}
+extra div{
+    font-size: 1pc;
+    display:inline;
+    padding: 0%;
+    margin: 0%;
+}
+extra div:nth-child(10n) {
+    animation-delay: -0.0s;
+}
+extra div:nth-child(10n+1) {
+    animation-delay: -0.1s;
+}
+extra div:nth-child(10n+2) {
+    animation-delay: -0.2s;
+}
+extra div:nth-child(10n+3) {
+    animation-delay: -0.3s;
+}
+extra div:nth-child(10n+4) {
+    animation-delay: -0.4s;
+}
+extra div:nth-child(10n+5) {
+    animation-delay: -0.5s;
+}
+extra div:nth-child(10n+6) {
+    animation-delay: -0.6s;
+}
+extra div:nth-child(10n+7) {
+    animation-delay: -0.7s;
+}
+extra div:nth-child(10n+8) {
+    animation-delay: -0.8s;
+}
+extra div:nth-child(10n+9) {
+    animation-delay: -0.9s;
+}
+
+.window, .main_window, .main_upgrades_window {
+    display: flex;
+    border: #888888 solid 3px;
+}
+.main_window {
+    margin-left: 10px;
+    margin-top: 20px;
+    width: max-content;
+}
+.main_window > *{
+    margin: 10px;
+}
+
+.button {
+    border: white solid 3px;
+    cursor: pointer;
+}
+.button:hover {
+    color: yellow;
+}
+.button:active {
+    color: #00ff00;
+}
+
+.window_group {
+    margin: 0%;
+    width: max-content;
+}
+.window_group > * {
+    margin: 10px;
+}
+.main_upgrades_window {
+    width: 300px;
+}
+.main_upgrades_window > * {
+    margin: 10px;
+    width: max-content;
+    height: max-content;
+    padding: 3px;
+}
