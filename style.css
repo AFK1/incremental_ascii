@@ -147,12 +147,20 @@ extra div:nth-child(10n+9) {
 .button {
     border: white solid 3px;
     cursor: pointer;
+    width: max-content;
 }
 .button:hover {
     color: yellow;
 }
 .button:active {
     color: #00ff00;
+}
+.button div:nth-child(1) {
+    margin-top: 2px;
+}
+.button div {
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 .window_group {
@@ -163,11 +171,14 @@ extra div:nth-child(10n+9) {
     margin: 10px;
 }
 .main_upgrades_window {
-    width: 300px;
+    min-width: 350px;
 }
 .main_upgrades_window > * {
     margin: 10px;
     width: max-content;
     height: max-content;
     padding: 3px;
+}
+.main_upgrades_window > div > div {
+    margin-top: 10px;
 }

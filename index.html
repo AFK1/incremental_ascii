@@ -9,16 +9,19 @@
 <body>
     <div class="main_window">
         <div class="window_group">
-            <div id="energy_counter" class="simple_text">energy: 0</div>
-            <div id="gold_counter" class="simple_text">gold: 0</div>
+            <div id="energy_element" class="simple_text">energy: 0</div>
+            <div id="gold_element" class="simple_text">gold: 0</div>
             <div id="main_button" class="simple_text button" style="width: min-content;">
                 <div>OOO</div>
                 <div>OOO</div>
                 <div>OOO</div>
             </div>
         </div>
-        <div class="main_upgrades_window">
-            <div id="buy_miner" class="simple_text button"> Miner</div>
+        <div class="main_upgrades_window simple_text">
+            <div id="miners_shop">
+                Miners
+                <br><br>
+            </div>
         </div>
     </div>
     <extra class="bounce_text">
@@ -27,6 +30,7 @@
         <div>o</div>
         <div>d</div>
     </extra>
+    <audio id="click_sound" src="click.wav"></audio>
 </body>
 <script src="game.js"></script>
 </html>
